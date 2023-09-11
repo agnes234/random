@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+  <!-- Animate CSS -->
+  <link rel="stylesheet" href="asset/css/animate.min.css">
+  <!-- favicon -->
+  <link rel="icon" href="asset/img/1.webp">
+  <link rel="stylesheet" href="asset/fonts/css/all.min.css">
+  <!-- Google Fonts -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- jquery -->
+  <script src="asset/js/jquery-3.7.0.min.js"></script>
+  <script src="asset/js/bootstrap.bundle.min.js"></script>
+  <script src="asset/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+  <title>Document</title>
+  <style>
+    .sidebar{
+      height: 100vh;
+      width: 250px;
+      border: 1px black;
+      overflow-y: scroll;
+      position: fixed;   
+      font-family: josefin sans;
+    }
+    .sidebar .sidebar-head .file-input{
+      position: absolute;
+      margin-top: -30px;
+      opacity: 0;
+    }
+    .sidebar .sidebar-body a{
+      text-decoration: none;
+      color: white!important;
+    }
+    .main-content{
+      margin-left: 250px;
+      font-family: josefin sans;
+    }
+    .main-content h1{
+      margin-left: 250px;
+      align-content: center;
+      
+    }
+  </style>
+</head>
+<body>
+<!-- Sidebar -->
+  <div class="sidebar bg-dark">
+    <div class="sidebar-head pt-4" align="center">
+      <img src="asset/img/1.jpeg" width="70" class="rounded-circle border border-primary">
+      <div class="mt-2">
+        <button class="btn btn-success btn-sm">
+          <i class="fas fa-camera"></i> Upload Image
+        </button>
+        <input type="file" id="file" class="form-control file-input" accept="image/*">
+      </div>
+    </div>
+
+    <div class="sidebar-body">
+      <div class="body-menu pt-3 pl-2">
+        <ul class="list-unstyled pl-4">
+          <!-- Homepage Sidebar -->
+          <li>
+            <a href=""> <i class="fas fa-home"> Home</i></a>
+          </li>
+
+          <!-- Library Sidebar -->
+          <li class="pt-5">
+            <a href=""> <i class="fas fa-book-open"> Library</i></a>
+          </li>
+
+          <!-- Video Sidebar -->
+          <li class="pt-5">
+            <a href=""> <i class="fas fa-upload"> Upload Video</i></a>
+          </li>
+
+          <!-- Story Block -->
+          <li class="pt-5">
+            <a href=""> <i class="fas fa-pen"> Write Your Story</i></a>
+          </li>
+
+          <!-- Short Video -->
+          <li class="pt-5">
+            <a href=""> <i class="fas fa-film"> SV's</i></a>
+          </li>
+
+          <!-- Settings -->
+          <li class="pt-5">
+            <a href=""> <i class="fas fa-cog"> Settings</i></a>
+          </li>
+
+          <!-- Profile -->
+          <li class="pt-5">
+            <a href=""> <i class="fas fa-user-circle"> Make Your Profile</i></a>
+          </li>
+
+          <!-- Categories -->
+          <li class="pt-5">
+            <a href=""> <i class="fas fa-envelope"> Messages</i></a>
+          </li>
+
+          <!-- About Us -->
+          <li class="pt-5">
+            <a href=""> <i class="fas fa-address-book"> About Us</i></a>
+          </li>
+
+          <!-- Contact Us -->
+          <li class="pt-5">
+            <a href=""> <i class="fas fa-phone"> Contact Us</i></a>
+          </li>
+
+         
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+  <main class="main-content">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card bg-dark text-white animate__animated animate__tada">
+            <img src="asset/img/4.jpg" class="card-img" style="height: 70vh;">
+            </div>
+            <div class="text">
+                <h5 class="card-title">Japan, Osaka</h5>
+                <p class="card-text">Take Pictures of You've Visited and Share Your Experiences</p>
+                <p class="card-text"> <i class="fa-user-circle"></i> User159 Last updated 3 mins ago</p>
+          </div>
+
+          <div class="row mt-4">
+        <div class="col-md-12">
+          <div class="card bg-dark text-white">
+            <img src="asset/img/download.jpeg" class="card-img" style="height: 70vh;">
+            </div>
+            <div class="text">
+                <h5 class="card-title">Shibuya, Japan</h5>
+                <p class="card-text">Recommend Places to Visit</p>
+                <p class="card-text"> <i class="fa-user-circle"></i> Blaze Last updated 3 mins ago</p>
+          </div>
+          <hr>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <script>
+    window.sr=ScrollReveal();
+      sr.reveal(".card",{
+        duration:5000,
+        origin:"left",
+        viewFactor:0.2,
+        easing:"cubic-bezier(0.5, 0, 0, 1)",
+        desktop:true,
+        mobile:true,
+        distance:"10px"
+      });
+  </script>
+</body>
+</html>
+
